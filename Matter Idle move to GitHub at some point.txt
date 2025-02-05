@@ -1,0 +1,191 @@
+Let's make a game!
+  name:Matter Idle
+  by:Hisbee
+  desc:Matter my Idle.
+  created:05/02/2025
+
+
+CSS
+	#game.on 
+	{
+    	background-size: 100% 100%;
+    	image-rendering: pixelated;
+	}
+
+ 	#box-upgrades
+	{
+		top: 43px;
+	}
+
+	#box-upgrButtons
+	{
+		width: 50%;
+		left: 50%;
+		height: 43px;
+		overflow-y: scroll;
+	}
+
+	.box-header, .box-footer 
+	{
+    	padding: 8px;
+    	font-size: 15px;
+    	font-weight: bold;
+	}
+
+	.upgradeSwitc 
+	{ 
+		height: 43px; 
+		width: 50%; 
+		margin: 0px; 
+		float: left; 
+	}
+
+
+Layout
+	*main
+		contains:res, buttons
+	*res
+		contains:Resources
+		class:fullWidth
+	*buttons
+		contains:Buttons
+	*store
+		contains:buildings, upgrades, upgrButtons
+	*buildings
+		contains:BulkDisplay, Buildings
+		header:Buildings
+		tooltip origin:left
+	*upgrButtons
+		contains:tag:upgradeSwitche
+	*upgrades
+		contains:Upgrades
+		header:Upgrades
+		costs:hide
+		names:hide
+
+Buttons 
+	*showAvailUpgr 
+		name:Available Upgrades 
+		tag:upgradeSwitche 
+		class:upgradeSwitc 
+		on click:
+ 			hide :Upgrades:owned 
+			show :Upgrades:notOwned 
+		end 
+		no tooltip 
+	*showOwnedUpgr 
+		name:Owned Upgrades 
+		tag:upgradeSwitche 
+		class:upgradeSwitc 
+		on click: 
+			show :Upgrades:owned 
+			hide :Upgrades:notOwned 
+		end 
+		no tooltip
+
+Settings
+	background:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Background.png
+	building cost increase:100%
+
+Resources
+	//True Resources
+
+	//Stats and the like
+
+	//Other
+		*TipTime
+
+
+Upgrades
+	*Tips
+		name:Matter Maker Handbook V2.7 
+		tags:Important TierI
+		desc:A book describing the ins and outs of Matter Makers. You'll need this if you want to start building them! </> </> <b>Effects: </b> </> <.> Shows """tips""" at the bottom of the screen sometimes, this hopefully won't get annoying :) </> </> <b> <#f5c542> !Important!</b> </#> | <#575652> Tier I </#>
+	on tick:yield 1 TipTime
+	on tick:$TipChance is random(1,100)
+	on tick:
+	if (TipTime>=25)
+		TipTime=0
+		if ($TipChance>=60)
+			$Tip is random(1,25)
+				if ($Tip=1)
+					toast Tip: Have you tried buying upgrades?
+				end
+				if ($Tip=2)
+					toast Tip: Every time you close one of these manually, it hurts!
+				end
+				if ($Tip=3)
+					toast Tip: Sharp Hamburger
+				end
+				if ($Tip=4)
+					toast Tip: Sub to IronDizaster!
+				end
+				if ($Tip=5)
+					toast Tip: Sub to @Hisbee72 on Youtube!
+				end
+				if ($Tip=6)
+					toast Fun Fact: This all happened to my buddy Eric once
+				end
+				if ($Tip=6)
+					toast In Game Tip: Remember to save for Upgrades sometimes. </> Real Life Tip: Never forget what they took from you... Take it back... at any cost
+				end
+				if ($Tip=7)
+					toast Tip: Collect my Notes
+				end
+				if ($Tip=8)
+					toast Tip: Get Ready!
+				end
+				if ($Tip=9)
+					toast Tip: Check out the IGM Games Archive for more games like this!
+				end
+				if ($Tip=10)
+					toast Tip: Im tip number 10, im so 10 pilled
+				end
+				if ($Tip=11)
+					toast Tip: Have you tried selling everything you own?
+				end
+				if ($Tip=12)
+					toast Tip: Important Upgrades are Important, you should buy them as fast as you can
+				end
+				if ($Tip=13)
+					toast Tip: Always check the Tags on Upgrades
+				end
+				if ($Tip=14)
+					toast Tip: All skills have a least 1 coin
+				end
+				if ($Tip=15)
+					toast Tip: Thanks to my Buddy Jim, he didn't do anything but shout out to a real one
+				end
+				if ($Tip=16)
+					toast Fun Fact: This Tip system was made terribly
+				end
+				if ($Tip=17)
+					toast Tip: Bored? Highly recommend checking out Orteil's Tumbler 
+				end
+				if ($Tip=18)
+					toast Fun Lore Fact: buy my upgrade -John D Upgrade
+				end
+				if ($Tip=19)
+					toast Fun Fact: Most Portal Upgrades are based off other games. Check them out!
+				end
+				if ($Tip=20)
+					toast Fun Lore Fact: Matter tastes like a mix between Water, Chicken and BBQ Sauce
+				end
+				if ($Tip=21)
+					toast Fun Lore Fact: Matt is so cool
+				end
+				if ($Tip=22)
+					toast Tip: Buy Portals, they have great upgrades most of the time
+				end
+				if ($Tip=23)
+					toast Fun Lore Fact: Portals are have human like sentience, and like Matter
+				end
+				if ($Tip=24)
+					toast Tip: Theres no reason to read this, go outside and bike for a bit, then comeback!
+				end
+				if ($Tip=25)
+					toast Tip: Upgrades are organised by Tags, Important ones always are at the top!
+				end
+			end
+		end
+	end
