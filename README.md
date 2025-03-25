@@ -19,7 +19,7 @@ IGM game im making, A game where you make Matter, hopfully a lot of it. Dig a ho
 * Matter
 
 ## What do each of these files mean??????????
-### Matter Idle Main Game.txt 
+### Matter Idle.txt 
 - Its the main, (hopefully) stable, balanced, game
 - You should probably be playing this one
 ### Matter Idle Private Beta.txt
