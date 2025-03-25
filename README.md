@@ -7,6 +7,7 @@ IGM game im making, A game where you make Matter, hopfully a lot of it. Dig a ho
 * Hopefully funny text
 * Lots of clipboards of stats to look at for 2 seconds after unlocked and then never again
 * Secret Upgrades (basicly stolen from Realm Grinder)
+* Lore??????? Maybe?????? idk?
 * Matter :)
 
 ## Update Log
