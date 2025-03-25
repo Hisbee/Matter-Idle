@@ -19,10 +19,10 @@ IGM game im making, A game where you make Matter, hopfully a lot of it. Dig a ho
 * Matter
 
 ## What do each of these files mean??????????
-### Matter Idle.txt 
+### Matter_Idle.txt 
 - Its the main, (hopefully) stable, balanced, game
 - You should probably be playing this one
-### Matter Idle Private Beta.txt
+### MIPB.txt (or Matter Idle Private Beta)
 - Its where a programe upcomming updates
 - Since I could be making changes to it at any time, you probably shouldn't be playing that one
 ### README.md
