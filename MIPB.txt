@@ -1522,7 +1522,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 	*BRLBetter
 		name:Lever Polish
 		tag:TierIII
-		desc:A tub of polish that'll make that lil orb on the end of any lever shine brigher than the sun! </> <i> Do not look derectly at polished orb after polishing for at least 24 hours, do not use on any non orb or non lever object, if the orb does any of the following, call 435 56 6288 372: Melt, Hurt to touch, Sings, Feels rubery, Grows eyes, ears, mouth, etc, Knows/Speaks the unknowable, Looks off, Duplicates, Grows holes, Feels sinful to be around or changes color/colour.</i> </> </> <b>Effects: </b> <.> Increases Research production by 25% while the lever is on </> </> <#296b2b> Tier III </#>
+		desc:A tub of polish that'll make that lil orb on the end of any lever shine brigher than the sun! </> <i><#575656>Do not look derectly at polished orb after polishing for at least 24 hours, do not use on any non orb or non lever object, if the orb does any of the following, call 435 56 6288 372: Melt, Hurt to touch, Sings, Feels rubery, Grows eyes, ears, mouth, etc, Knows/Speaks the unknowable, Looks off, Duplicates, Grows holes, Feels sinful to be around or changes color/colour.</#></i> </> </> <b>Effects: </b> <.> Increases Research production by 25% while the lever is on </> </> <#296b2b> Tier III </#>
 		cost:17000 mat, 700 Research
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Something%20Up.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%203%20Boarder
 		req:BigRedLever
@@ -1960,7 +1960,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		tags:Misc noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever
 		req:BigRedLever
-		desc:Click this turn turn [?(LeverOn=0)|on|off] the Big Red Lever, [?(LeverOn=0)|stoping|letting] you make Data points[?(LeverOn=0)|.| again.] </> </> [?(LeverOn=0 and have BRLBetter)|Because you have the Lever on, you are making 25% more Research|][?(LeverOn=1 and have BRLBetter)|If you turned the Lever on, you would be making 25% more Research|]
+		desc:Click this turn turn [?(LeverOn=0)|<b><#00ff00>on</#></b>|<b><#ff0000>Off</#></b>] the Big Red Lever, [?(LeverOn=0)|<b>stoping</b>|<b>letting</>] you make Data points[?(LeverOn=0)|.| again.] [?(LeverOn=0 and have BRLBetter)|</> </> Because you have the Lever on, you are making 25% more Research|][?(LeverOn=1 and have BRLBetter)|</> </> If you turned the Lever on, you would be making 25% more Research|]
 		on click:
 			if (LeverOn=0)
 				LeverOn=1
