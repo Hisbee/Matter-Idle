@@ -10,6 +10,9 @@ IGM game im making, A game where you make Matter, hopfully a lot of it. Dig a ho
 * Lore??????? Maybe?????? idk?
 * Matter :)
 
+## Play it here!
+Main Game - https://orteil.dashnet.org/igm/?g=https://raw.githubusercontent.com/Hisbee/Matter-Idle/refs/heads/main/Matter_Idle.txt
+
 ## Update Log
 ### 0.1 The Dream Beginning
 * Made the game
