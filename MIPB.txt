@@ -1515,7 +1515,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		cost:7500 mat, 3 SicKt, 1 Data
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/er https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		req:SmartPortal
-		on earn:yield BigRedLever2
+		on earn:yield BRL2
 		passive:grant 1 TierII
 		passive:grant 1 Important
 
@@ -1955,7 +1955,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 *TEMPLATE
 //Template is here to make sure it doesn't mess with anything
 
-	*BigRedLever2
+	*BRL2
 		name:Big Red Lever
 		tags:Misc noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever
