@@ -129,7 +129,7 @@ Layout
 	*menuTabs
 		contains:tag:MenuTab
 	*menuContent
-		contains:tag:Notes, Achievements, tag:Misc, tag:Lost, tag:fishenTools, tag:fish, tag:Skill, menuCheats
+		contains:tag:Notes, Achievements, tag:Misc, tag:MiscStat, tag:Lost, tag:fishenTools, tag:fish, tag:Skill, menuCheats
 		names:hide
 		tooltip origin:top
 		costs:hide
@@ -306,6 +306,8 @@ Buttons
 			hide :tag:stat
 			hide :tag:cheat
 			Fun=random(1,72)
+			LeverOn=0
+			if (no ResearchCounter) hide Research
 		end
 		on load:
 			show :Achievements:owned
@@ -326,6 +328,8 @@ Buttons
 			hide :tag:Skill
 			hide :tag:stat
 			hide :tag:cheat
+			LeverOn=0
+			if (no ResearchCounter) hide Research
 		end
 	*menuNotes
 		name:Notes
@@ -436,7 +440,7 @@ Resources
 			name:Research
 			desc:Smart Juice. Mush it together with some other sciency stuff for Data Points
 			icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Research.png
-			hidden
+			show earned
 
 		*NRG
 			name:NRG
@@ -522,7 +526,8 @@ Resources
 		tag:stat
 	*BTTrigers
 		tag:stat
-
+	*LeverOn
+		tag:stat
 
 	//Fishen Stuff
 	*TimesFished
@@ -806,7 +811,7 @@ Buildings
 	*SciKt
 		name:Science Kit
 		tag:Tier II
-		desc:Does science stuff, for science juice of course. </> </> <b>Stats:</b> </> One Science Kit (or SciKt) produces <b>[SciKtTotalMade:ps / SciKt]</b> Research per second </> You can currently have a max of <b>[SciKtMax]</b> right now </> All <b>[this]</b> of your Science Kits are making a total of <b>[SciKtTotalMade:ps]</b> Research per second </> Your Science Kits have made a total of <b>[SciKtTotalMade]</b> Research so far </> </> <b> Passives: </b> </> <b> <#77b058> Breakthrough </b> </#> </> Every second you have a 2% chance to get 5 Research per Science Kit owned. </> Times Trigged: [BTTrigers]
+		desc:Does science stuff, for science juice of course. </> </> <b>Stats:</b> </> One Science Kit (or SciKt) produces <b>[SciKtTotalMade:ps / SciKt]</b> Research per second </> You can currently have a max of <b>[SciKtMax]</b> right now </> All <b>[this]</b> of your Science Kits are making a total of <b>[SciKtTotalMade:ps]</b> Research per second </> Your Science Kits have made a total of <b>[SciKtTotalMade]</b> Research so far </> </> <b> Passives: </b> </> <b> <#77b058> Breakthrough </b> </#> </> Every second you have a 2% chance to get 5 Research per Science Kit owned ([(5*SciKt)]). </> Times Trigged: [BTTrigers]
 		req:ScienceKitResearch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Science%20Kit
 		on tick:yield 0.1 Research
@@ -912,7 +917,7 @@ Upgrades
 				end
 			end
 		on tick:
-			if (Research>=500)
+			if (Research>=500 and LeverOn=0)
 				yield 1 Data
 				lose 500 Research
 				if (have TheLab) 
@@ -1486,9 +1491,51 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		passive:multiply yield of Research by 1.1
 		passive:grant 1 TierII
 
+	*SmartPortal
+		name:Smart Portal
+		tag:Portal TierII
+		desc:This Portal is a nerd, They've already started droning on and on about how subpar this lab is and the many ways it could be improved. Quick! Hit em with a right hook! </> </> <b>Effects: </b> <.> Unlocks 5 Upgrades that help you make Research and Data Points, some of which will help a lot with getting certain upgrades... <i>*wink* *nudge* buy this now</i> </> </> <#8d54b0> > Portal < </#> <b>|</b> <#adadad> Tier II </#>
+		req:PortalResearch, 25 Data:earned
+		cost:5000 mat, 5 Data, 250 Research
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/SmartPortal https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
+		passive:grant 1 PortOwned
+		passive:grant 1 TierII
+
+	*BigRedLever
+		name:The Big Red Lever
+		tags:Important TierII 
+		desc:A large lever with a red orb on the end of you can put right next to where Data Points are made that you can use to turn it off in case something goes horribly, horribly wrong, or you just feel like it. I mean, it is fun to pull... kinda remindes you of a slot machine... maybe </> </> <b>Effects: </b> <.> Unlocks the ability to stop making Data Points in the misc menu </> </> <#f5c542> !Important!</b> </#> <b>|</b> <#adadad> Tier II </#>
+		cost:7500 mat, 3 SicKt, 1 Data
+		req:SmartPortal
+		on earn:yield BigRedLever2
+		passive:grant 1 TierII
+		passive:grant 1 Important
+
+	*BRLBetter
+		name:Lever Polish
+		tag:TierIII
+		desc:A tub of polish that'll make that lil orb on the end of any lever shine brigher than the sun! </> <i> Do not look derectly at polished orb after polishing for at least 24 hours, do not use on any non orb or non lever object, if the orb does any of the following, call 435 56 6288 372: Melt, Hurt to touch, Sings, Feels rubery, Grows eyes, ears, mouth, etc, Knows/Speaks the unknowable, Looks off, Duplicates, Grows holes, Feels sinful to be around or changes color/colour.</i> </> </> <b>Effects: </b> <.> Increases Research production by 25% while the lever is on </> </> <#296b2b> Tier III </#>
+		cost:17000 mat, 700 Research
+		req:BigRedLever
+		passive:if (LeverOn>=1) multiply yield of Research by 1.25
+		passive:grant 1 TierIII
+
+	*ResearchCounter
+		name:Research Counter
+		tags:Important TierI
+		desc:The fact that I'm making you pay for this is criminal. </> </> <b>Effects: </b> <.> Shows Research </> </> <#f5c542> !Important!</b> </#> <b>|</b> <#787878> Tier I </#>
+		cost:2 Data, 550 Research
+		req:SmartPortal
+		passive:grant 1 TierI
+		passive:grant 1 Important
+		on earn:show Research
+		on load:show Research
+
+
+
 	*RichPortal
 		name:Rich Portal
-		tags:Portal
+		tags:Portal TierII
 		desc:This portal is quite rich and big money. They only talk to other rich people, like you with all the matter you got, and only about rich things like: money, gambling, fast car (just the one), artisanal bread, gambling, gacha games and gambling. They also aren't in any amount of debt. You get the feeling that one day, this portal and everything within it will be cheaper </> </> <b>Effects: </b> <.> Unlocks 4 incredibly expansive upgrades that are mainly just here to give people with nothing better to do something stupid to grind for. Most of them are also useless. </> </> <#8d54b0> > Portal < </#> <b>|</b> <#adadad> Tier II </#>
 		req:100000 mat, PortalResearch
 		cost:1000000 mat
@@ -1900,9 +1947,23 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 *TEMPLATE
 //Template is here to make sure it doesn't mess with anything
 
+	*BigRedLever2
+		name:Big Red Lever
+		tags:Misc noSwitch
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever
+		req:BigRedLever
+		desc:Click this turn turn [?(LeverOn=0)|on|off] the Big Red Lever, [?(LeverOn=0)|stoping|letting] you make Data points[?(LeverOn=0)|.| again.] </> </> [?(have BRLBetter)|[?(LeverOn=0)|Because you have the Lever on, you are making 25% more Research|If you turned the Lever on, you would be making 25% more Research]| ]
+		on click:
+			if (LeverOn=0)
+				LeverOn=1
+			else if (LeverOn>=1)
+				LeverOn=0
+			end
+		end
+
 	*BasicStats2
 		name:Basic Stats
-		tags:Misc noSwitch
+		tags:MiscStat noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Clipboard
 		req:BasicStats
 		desc:</><b>Production:</b> </> Matter per second: [mat:ps] </> Matter per second from Matter Makers: [(MMMKITotalMade:ps+MMMKIITotalMade:ps+MMMKIIITotalMade:ps+MMMKIVTotalMade:ps)] </> [?(have MMKIUnlock)|Matter per second from Tier I Matter Makers: [MMMKITotalMade:ps]|<#575656>Locked :(</#>] </> [?(have MatterMakerResearch)|Matter per second from Tier II Matter Makers: [MMMKIITotalMade:ps]|<#575656>Locked :(</#>] [?(have MatterMakerResearch2)|Matter per second from Tier III Matter Makers: [MMMKIIITotalMade:ps]|<#575656>Locked :(</#>] [?(Fun=4)| Shmubling: 8.73 |]</> </> <b>Matter:</b> </> Total Matter Produced: [(mat:earned)] </> Most Matter Held at Once: [(mat:max)]
@@ -1910,7 +1971,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 
 	*CompletionStats2
 		name:Completion Stats
-		tags:Misc noSwitch
+		tags:MiscStat noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/List
 		req:CompletionStats
 		desc:</><b>Upgrades!</b></> Tier I: [TierI]/?? </> Tier II: [TierII]/?? [?(TierIII>=1)| </> Tier III: [TierIII]/?? | ]</> Total Upgrades: <b>[TotalUpgrades]/??</b> </> </> Important Upgrades: [Important]/?? [?(TierS>=1)| </> Secret Upgrades:[TierS]/?? |</>] </> </> <b>Achivements!</b> </> come back when achivements are done lol </> </> <b>Other!</b> </> [?(have ResearchUnlock)|Things Researched: [TotalResearch]/??|<#575656>Locked :(</#>] </> [?(have FishingResearch)|Normal Fish Found: [FishFound]/??|<#575656>Locked :(</#>] </> [?(DopeFishFound>=1)|Dope Fish Found: [DopeFishFound]/??|<#575656>Locked :(</#>]
@@ -1918,7 +1979,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 
 	*ResearchStats2
 		name:Research Stats
-		tags:Misc noSwitch
+		tags:MiscStat noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/DataClipboard
 		req:ResearchStats
 		desc:</><b>Research Production</b></>Research Per Second: [(Research:ps)] </> Total Research Produced: [(Research:earned)] </> </><b>Data Production:</b></>Total Data Produced: [(Data:earned)] </> Most Data Held at Once: [(Data:max)]
@@ -1926,7 +1987,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 
 	*TheList2
 		name:The List
-		tags:Misc noSwitch
+		tags:MiscStat noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/DumbList
 		req:TheList
 		desc:Wow you brought this??? Anyway when I add Prestige Tokens how many you've got and where you can get them will show here. Good job wasting your time tho.
@@ -1934,7 +1995,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 
 	*PortalNotes2
 		name:Portal Hints
-		tags:Misc noSwitch
+		tags:MiscStat noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/DimensionPhoneBook
 		req:PortalNotes
 		desc:Alan please add words
