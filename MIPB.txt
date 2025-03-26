@@ -432,7 +432,7 @@ Resources
 
 		*Data
 			name:Data Points
-			desc:Weee bits of pure Research juice mushed together with a few other bits and thingies and stuff <#575656>(We legally can't tell you)</#>. Used for buying Research </> </> You'll get one of these for every 500 Research you get. You're <b>[(500-Research)]</b> away from your next Data Point
+			desc:Weee bits of pure Research juice mushed together with a few other bits and thingies and stuff <#575656>(We legally can't tell you)</#>. Used for buying Research </> </> You'll get one of these for every 500 Research you get. [?(Research>=500)|[?(LeverOn=1)|You should be making a Data Point, but the Lever is on, stopping you from making Data Points|]You're making a Data Point|You're <b>[(500-Research)]</b> away from your next Data Point[?(LeverOn=1)|, but the Lever is on, stopping you from making Data Points|]]
 			icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Data%20Point
 			show earned
 
