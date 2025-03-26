@@ -1960,7 +1960,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		tags:Misc noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever
 		req:BigRedLever
-		desc:Click this turn turn [?(LeverOn=0)|<b><#00ff00>on</#></b>|<b><#ff0000>Off</#></b>] the Big Red Lever, [?(LeverOn=0)|<b>stoping</b>|<b>letting</>] you make Data points[?(LeverOn=0)|.| again.] [?(LeverOn=0 and have BRLBetter)|</> </> Because you have the Lever on, you are making 25% more Research|][?(LeverOn=1 and have BRLBetter)|</> </> If you turned the Lever on, you would be making 25% more Research|]
+		desc:Click this turn turn [?(LeverOn=0)|<b><#00ff00>on</#></b>|<b><#ff0000>Off</#></b>] the Big Red Lever, [?(LeverOn=0)|<b>stoping</b>|<b>letting</b>] you make Data points[?(LeverOn=0)|.| again.] [?(LeverOn=0 and have BRLBetter)|</> </> Because you have the Lever on, you are making 25% more Research|][?(LeverOn=1 and have BRLBetter)|</> </> If you turned the Lever on, you would be making 25% more Research|]
 		on click:
 			if (LeverOn=0)
 				LeverOn=1
