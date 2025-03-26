@@ -846,7 +846,7 @@ Upgrades
 		desc:After doing a bit of light reading and funding you can now build Matter Makers! Crappy Matter Makers, but they're better than nothing </> </> <b>Effects: </b> </> <.> Unlocks Tier I Matter Makers. They make 0.1 Matter a second and you can have a max of 10 <.> Also gives you a free Tier I Matter Maker </> </> <b> <#f5c542> !Important!</b> </#> <b>|</b> <#787878> Tier I </#>
 		req:MoreMatterIII, Tips
 		cost:100 mat
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK1 https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK1 https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
 		on earn:yield 1 MMMKI
 		passive:grant 10 MMMKIMax
 		passive:grant 1 TierI
@@ -863,7 +863,7 @@ Upgrades
 		desc:While you were digging, it seams you've found a "fossil" of some kind old robot thingy. Before you can even get a real look at it, some generic mad scientist guy (I mean they got white hair, gloves, goggles, the whole whole shebang) comes up to you talking about "His baby", thanking you heavily and asking for it back. You oblige (You don't really have a use for some dirt fulled hunk of junk) and for your troubles he gives you one of those science kits for ages 3-12 and says "It's the least he can do". Seeing as you have nothing better to do, you try to open it but alas! It's taped shut, and scissors have been getting somewhat pricy as of late... </> </> <b>Effects: </b> </> <.> Unlocks Research and Data Points! A new resource used for buying special upgrades <.> Also start making Research, at the rate of 1 a second </> </> <b> <#f5c542>!Important!</b> </#> <b>|</b> <#787878> Tier I </#>
 		req:MoreMatterIII, Tips
 		cost:120 mat
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Research.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Research.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
 		passive:grant 1 TierI
 		on tick:yield 1 Research
 		on earn:show Data
@@ -1280,7 +1280,7 @@ Upgrades
 		cost:750 mat
 		passive:multiply yield of mat by 1.02
 		req:MatterResearch
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
 		passive:grant 1 TierI
 		passive:grant 1 Important
 
@@ -1423,7 +1423,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		desc:Most of your Research so far has been you just looking at random stuff. Not anymore. You've acquired enough funding and influence to finally build an actual lab! With science stuff, and people, and vending machines <#575656>(Sadly without beer, apparently it would be "Dangerous" and "A massive risk to safety to have intoxicated people on the site". One day you'll get your way)</#>, and blackjack and many other very cool research science things. You've made it big, and you'll only go higher! </> </> <b>Effects: </b> </> <.> Increases Research Production by 1.5 <.> When ever you make Data, there is a 20% chance to get 200 Research <.> Unlocks more Research! </> </> <b> <#f5c542> !Important!</b> </#> <b>|</b> <#296b2b> Tier III </#>
 		req:ResearchIV
 		cost:10000 mat, 2 Data
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/TheLab https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%203%20Boarder
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/TheLab https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%203%20Boarder
 		on tick:yield 1.5 Research
 		passive:grant 1 TierIII
 
@@ -1506,6 +1506,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		tags:Important TierII 
 		desc:A large lever with a red orb on the end of you can put right next to where Data Points are made that you can use to turn it off in case something goes horribly, horribly wrong, or you just feel like it. I mean, it is fun to pull... kinda remindes you of a slot machine... maybe </> </> <b>Effects: </b> <.> Unlocks the ability to stop making Data Points in the misc menu </> </> <#f5c542> !Important!</b> </#> <b>|</b> <#adadad> Tier II </#>
 		cost:7500 mat, 3 SicKt, 1 Data
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		req:SmartPortal
 		on earn:yield BigRedLever2
 		passive:grant 1 TierII
@@ -1516,6 +1517,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		tag:TierIII
 		desc:A tub of polish that'll make that lil orb on the end of any lever shine brigher than the sun! </> <i> Do not look derectly at polished orb after polishing for at least 24 hours, do not use on any non orb or non lever object, if the orb does any of the following, call 435 56 6288 372: Melt, Hurt to touch, Sings, Feels rubery, Grows eyes, ears, mouth, etc, Knows/Speaks the unknowable, Looks off, Duplicates, Grows holes, Feels sinful to be around or changes color/colour.</i> </> </> <b>Effects: </b> <.> Increases Research production by 25% while the lever is on </> </> <#296b2b> Tier III </#>
 		cost:17000 mat, 700 Research
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Something%20Up.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%203%20Boarder
 		req:BigRedLever
 		passive:if (LeverOn>=1) multiply yield of Research by 1.25
 		passive:grant 1 TierIII
@@ -1525,13 +1527,12 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		tags:Important TierI
 		desc:The fact that I'm making you pay for this is criminal. </> </> <b>Effects: </b> <.> Shows Research </> </> <#f5c542> !Important!</b> </#> <b>|</b> <#787878> Tier I </#>
 		cost:2 Data, 550 Research
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/ResearchCounter https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
 		req:SmartPortal
 		passive:grant 1 TierI
 		passive:grant 1 Important
 		on earn:show Research
 		on load:show Research
-
-
 
 	*RichPortal
 		name:Rich Portal
@@ -1588,7 +1589,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		desc:A clipboard for doodling on and writing funny stuff on. Could also maybe be used to compile stats or something but who would ever do that </> </> <b>Effects: </b> <.> Shows a few stats in the Misc menu, such as total upgrades and Matter production per second </> </> <b> <#f5c542> !Important!</b> </#> <b>|</b> <#adadad> Tier II </#>
 		cost:500 mat
 		req:500 mat:earned, Tips
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Clipboard https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Clipboard https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		on earn:yield BasicStats2
 		passive:grant 1 TierII
 		passive:grant 1 Important
@@ -1599,7 +1600,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		desc:A big list showing everything you have done and will ever do. Somewhat weird that someone would make this but you've seen weirder </> </> <b>Effects: </b> <.> Shows useful Completionist stats in the Misc menu </> </> <b> <#f5c542> !Important!</b> </#> <b>|</b> <#adadad> Tier II </#>
 		cost:750 mat, 3 MMMKI
 		req:700 mat:earned, BasicStats
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/List https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/List https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		passive:grant 1 TierII
 		on earn:yield CompletionStats2
 		passive:grant 1 Important
@@ -1608,7 +1609,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		name:Matter Maker Handbook V2.7 
 		tags:Important TierI
 		desc:A book describing the ins and outs of Matter Makers. You'll need this if you want to start building them! </> </> <b>Effects: </b> </> <.> Shows """"""Useful"""""" """tips""" at the bottom of the screen sometimes </> </> <b> <#f5c542> !Important!</b> </#> <b>|</b> <#787878> Tier I </#>
-	icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20Maker%20Handbook https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
+	icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20Maker%20Handbook https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
 	cost:75 mat
 	req:Begin
 	on tick:yield 1 TipTimer
