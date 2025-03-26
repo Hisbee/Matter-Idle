@@ -331,7 +331,6 @@ Buttons
 			hide :tag:Skill
 			hide :tag:stat
 			hide :tag:cheat
-			LeverOn=0
 			if (no ResearchCounter) hide Research
 		end
 	*menuNotes
