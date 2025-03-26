@@ -278,6 +278,7 @@ Buttons
 			show :Achievements:owned 
 			hide :tag:Notes:owned 
 			hide :tag:Misc:owned
+			hide :tag:MiscStat:owned
 			hide :tag:Lost
 			MenuPage=1
 			hide :tag:fishenTools
@@ -290,6 +291,7 @@ Buttons
 			show :Achievements:owned 
 			hide :tag:Notes:owned
 			hide :tag:Misc:owned
+			hide :tag:MiscStat:owned
 			hide :tag:Lost
 			hide MenuPage
 			MenuPage=1
@@ -313,6 +315,7 @@ Buttons
 			show :Achievements:owned
 			hide :tag:Notes:owned
 			hide :tag:Misc:owned
+			hide :tag:MiscStat:owned
 			hide :tag:Lost
 			hide MenuPage
 			MenuPage=1
@@ -340,6 +343,7 @@ Buttons
 			show :tag:Notes:owned 
 			hide :Achievements:owned 
 			hide :tag:Misc:owned
+			hide :tag:MiscStat:owned
 			hide :tag:Lost 
 			MenuPage=2
 			hide :tag:fishenTools
@@ -355,6 +359,7 @@ Buttons
 		class:MenuTab
 		on click: 
 			show :tag:Misc:owned
+			show :tag:MiscStat:owned
 			hide :tag:Notes:owned 
 			hide :Achievements:owned 
 			if (no LostAchivement) show :tag:Lost
@@ -373,6 +378,7 @@ Buttons
 			show :tag:fishenTools
 			show :tag:fish
 			hide :tag:Misc:owned
+			hide :tag:MiscStat:owned
 			hide :tag:Notes:owned 
 			hide :Achievements:owned 
 			hide :tag:Lost
@@ -390,6 +396,7 @@ Buttons
 			hide :tag:fishenTools
 			hide :tag:fish
 			hide :tag:Misc:owned
+			hide :tag:MiscStat:owned
 			hide :tag:Notes:owned 
 			hide :Achievements:owned 
 			hide :tag:Lost
@@ -1501,14 +1508,14 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		passive:grant 1 PortOwned
 		passive:grant 1 TierII
 
-	*BigRedLever
+	*er
 		name:The Big Red Lever
 		tags:Important TierII 
 		desc:A large lever with a red orb on the end of you can put right next to where Data Points are made that you can use to turn it off in case something goes horribly, horribly wrong, or you just feel like it. I mean, it is fun to pull... kinda remindes you of a slot machine... maybe </> </> <b>Effects: </b> <.> Unlocks the ability to stop making Data Points in the misc menu </> </> <#f5c542> !Important!</b> </#> <b>|</b> <#adadad> Tier II </#>
 		cost:7500 mat, 3 SicKt, 1 Data
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/er https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		req:SmartPortal
-		on earn:yield BigRedLever2
+		on earn:yield er2
 		passive:grant 1 TierII
 		passive:grant 1 Important
 
@@ -1961,6 +1968,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 				LeverOn=0
 			end
 		end
+		on earn:if (MenuPage<3 or MenuPage>3) hide this
 
 	*BasicStats2
 		name:Basic Stats
