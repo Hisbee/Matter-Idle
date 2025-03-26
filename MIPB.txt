@@ -1513,7 +1513,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		tags:Important TierII 
 		desc:A large lever with a red orb on the end of you can put right next to where Data Points are made that you can use to turn it off in case something goes horribly, horribly wrong, or you just feel like it. I mean, it is fun to pull... kinda remindes you of a slot machine... maybe </> </> <b>Effects: </b> <.> Unlocks the ability to stop making Data Points in the misc menu </> </> <#f5c542> !Important!</b> </#> <b>|</b> <#adadad> Tier II </#>
 		cost:7500 mat, 3 SicKt, 1 Data
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/er https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/er https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20ImportantMarker https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Something%20Up.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/BigRedLever https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		req:SmartPortal
 		on earn:yield BigRedLever2
 		passive:grant 1 TierII
