@@ -150,13 +150,14 @@ Buttons
 		on click:yield 10000000 mat
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/ClickyClicky https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter
 	*cheat2
-		text:Matter Maker Maker </> (Sets all Matter Makers to max)
+		text:Matter Maker Maker </> (Sets all Buildings to max)
 		name:Matter Maker Maker
 		tag:cheat
 		desc:Make Matter Makers from nothing, you cheater
 		on click:MMMKI=MMMKIMax
 		on click:MMMKII=MMMKIIMax
 		on click:MMMKIII=MMMKIIIMax
+		on click:SciKt=SciKtMax
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/MatterMakerMaker.png
 	*cheat3
 		text:Brain Blast </> (Give 500 Research)
@@ -824,7 +825,7 @@ Buildings
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Science%20Kit
 		on tick:yield 0.1 Research
 		on tick:yield 0.1 SciKtTotalMade
-		cost:750 mat, 75 Research
+		cost:750 mat, 75 Research, 2 MMMKI
 		on tick:if (SciKt > SciKtMax) SciKt=SciKtMax
 
 
