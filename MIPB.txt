@@ -522,6 +522,8 @@ Resources
 		tag:stat
 	*TierSAchieve
 		tag:stat
+	*BrickUp
+		tag:stat
 	*MenuPage
 		tag:stat
 	*NotesOwned
@@ -817,7 +819,7 @@ Buildings
 	*SciKt
 		name:Science Kit
 		tag:Tier II
-		desc:Does science stuff, for science juice of course. </> </> <b>Stats:</b> </> One Science Kit (or SciKt) produces <b>[SciKtTotalMade:ps / SciKt]</b> Research per second </> You can currently have a max of <b>[SciKtMax]</b> right now </> All <b>[this]</b> of your Science Kits are making a total of <b>[SciKtTotalMade:ps]</b> Research per second </> Your Science Kits have made a total of <b>[SciKtTotalMade]</b> Research so far </> </> <b> Passives: </b> </> <b> <#77b058> Breakthrough </b> </#> </> Every second you have a 2% chance to get 5 Research per Science Kit owned ([(5*SciKt)]). </> Times Trigged: [BTTrigers]
+		desc:Does science stuff, for science juice of course. </> </> <b>Stats:</b> </> One Science Kit (or SciKt) produces <b>[SciKtTotalMade:ps / SciKt]</b> Research per second </> You can currently have a max of <b>[SciKtMax]</b> right now </> All <b>[this]</b> of your Science Kits are making a total of <b>[SciKtTotalMade:ps]</b> Research per second </> Your Science Kits have made a total of <b>[SciKtTotalMade]</b> Research so far </> </> <b> Passives: </b> </> <b> <#77b058> Breakthrough </b> </#> </> Every second you have a 2% chance to get 5 Research per Science Kit owned (<b>[(5*SciKt)]</b>). </> Times Trigged: [BTTrigers]
 		req:ScienceKitResearch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Science%20Kit
 		on tick:yield 0.1 Research
@@ -1499,13 +1501,24 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 
 	*SmartPortal
 		name:Smart Portal
-		tag:Portal TierII
+		tags:Portal TierII
 		desc:This Portal is a nerd, They've already started droning on and on about how subpar this lab is and the many ways it could be improved. Quick! Hit em with a right hook! </> </> <b>Effects: </b> <.> Unlocks 5 Upgrades that help you make Research and Data Points, some of which will help a lot with getting certain upgrades... <i>*wink* *nudge* buy this now</i> </> </> <#8d54b0> > Portal < </#> <b>|</b> <#adadad> Tier II </#>
 		req:PortalResearch, 25 Data:earned
 		cost:5000 mat, 5 Data, 250 Research
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/SmartPortal https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		passive:grant 1 PortOwned
 		passive:grant 1 TierII
+
+	*LightBlueBrick
+		name:LightBlueBrick
+		tags:TierII Brick
+		desc:A plastic brick you can stack with other bricks like it, this one kinda looks like Science colors. Smells like recently cleaned tile floor. </> </> <b>Effects: </b> <.> Lets you build 5 more Science Kits <.> The above effect is increased by 5 for each other brick upgrade you own </> </> <#adadad> Tier II </#> <b>|</b> <#663e2c> ■-Brick-■ </#>
+		req:SmartPortal
+		cost:7500 mat, 5 SciKt, 125 Research
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/LightBlueBrick https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
+		passive:grant 1 TierII
+		passive:grant 1 BrickUp
+		passive:grant (5*BrickUp) SciKtMax
 
 	*BigRedLever
 		name:The Big Red Lever
