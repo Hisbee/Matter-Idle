@@ -1568,51 +1568,41 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 	*RichPortal
 		name:Rich Portal
 		tags:Portal TierII
-		desc:This portal is quite rich and big money. They only talk to other rich people, like you with all the matter you got, and only about rich things like: money, gambling, fast car (just the one), artisanal bread, gambling, gacha games and gambling. They also aren't in any amount of debt. You get the feeling that one day, this portal and everything within it will be cheaper </> </> <b>Effects: </b> <.> Unlocks 4 incredibly expansive upgrades that are mainly just here to give people with nothing better to do something stupid to grind for. Most of them are also useless. </> </> <#8d54b0> > Portal < </#> <b>|</b> <#adadad> Tier II </#>
+		desc:This portal is quite rich and big money. They only talk to other rich people, like you with all the matter you got, and only about rich things like: money, gambling, fast car (just the one), artisanal bread, gambling, gacha games and gambling. They also aren't in any amount of debt. </> </> <b>Effects: </b> <.> Unlocks 3 somewhat expansive upgrades. </> </> <#8d54b0> > Portal < </#> <b>|</b> <#adadad> Tier II </#>
 		req:100000 mat, PortalResearch
-		cost:1000000 mat
+		cost:750000 mat
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/RichPortal https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
 		passive:grant 1 PortOwned
 		passive:grant 1 TierII
 
-
 	*GoldStatue
-		name:Cool Statue
+		name:Prestigious Statue
 		tags:TierI
-		desc:A very very expensive statue that looks nothing like you. It does look cool tho </> </> <b>Effects: </b> <.> Looks nice <.> Is an upgrade </> </> <#787878> Tier I </#>
+		desc:A very very expensive statue that celabrates your many accomplishments. It also looks nothing like you. </> </> <b>Effects: </b> <.> Increses Matter production by 1% for every Prestige achivement you have </> </> <#787878> Tier I </#>
 		req:RichPortal
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/GoldStatue.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
-		cost:2500000 mat
+		cost:250000 mat
 		passive:grant 1 TierI
 
 	*TheList
-		name:The List
+		name:"The List"
 		tags:TierII
-		desc:Which list? The list, thats the one. The only list the matters </> </> <b>Effects: </b> <.> Unlocks a list that shows       in the misc menu </> </> <#adadad> Tier II </#>
+		desc:A list helping you keep track of where your next Prestige Tokens can be found. While we can't tell you the exact ways it works, it involves several journalists, a dvd copy of the song Loadsamoney and, strangely, one domestic silk moth </> </> <b>Effects: </b> <.> Unlocks a list that shows your progress towards Prestige Achivements in the misc menu </> </> <#adadad> Tier II </#>
 		req:RichPortal
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/DumbList https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
-		cost:7500000 mat
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/TheList https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
+		cost:100000 mat
 		passive:grant 1 TierII
 		on earn:yield TheList2
 
 	*Coin
-		name:Currently Useless Token
+		name:One (1) Prestige Token
 		tags:TierII
-		desc:Its a token, can't be used now, maybe later </> </> <b>Effects: </b> <.> Gives you a token. It will be useful latter </> </> <#adadad> Tier II </#>
+		desc:Its a whole One (I) Prestige Token, that can be used for a whopping 1 (Uno) Prestige Upgrade. You know? the ones with the <#ffff61> ! Prestige ! </#> tag? Cool good go buy your 1 (Single) Prestige Upgrade, after you buy this 1 (one and one only) upgrade </> <b>Effects: </b> <.> Gives 1 (일) Prestige Token </> </> <#adadad> Tier II </#>
 		req:RichPortal
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Prestige%20Coin.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
-		cost:12500000 mat
+		cost:500000 mat
 		passive:grant 1 TierII
 		on earn:yield 1 PreToken
-
-	*BronzoHat
-		name:Stupid Hat
-		tags:TierI
-		desc:Its a hat, only for the low low price of 10000000000 Matter, what a steal! </> </> <b>Effects: </b> <.> Later :) </> </> <#787878> Tier I </#>
-		req:RichPortal
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/StupidHat.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
-		cost:10000000000 mat
-		passive:grant 1 TierI
 
 	*BasicStats
 		name:Clipboard
@@ -2019,9 +2009,9 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		on earn:if (MenuPage<3 or MenuPage>3) hide this
 
 	*TheList2
-		name:The List
+		name:"The List"
 		tags:MiscStat noSwitch
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/DumbList
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/TheList
 		req:TheList
 		desc:Wow you brought this??? Anyway when I add Prestige Tokens how many you've got and where you can get them will show here. Good job wasting your time tho.
 		on earn:if (MenuPage<3 or MenuPage>3) hide this
