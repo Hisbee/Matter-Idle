@@ -1570,7 +1570,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		tags:Portal TierII
 		desc:This portal is quite rich and big money. They only talk to other rich people, like you with all the matter you got, and only about rich things like: money, gambling, fast car (just the one), artisanal bread, gambling, gacha games and gambling. They also aren't in any amount of debt. </> </> <b>Effects: </b> <.> Unlocks 3 somewhat expansive upgrades. </> </> <#8d54b0> > Portal < </#> <b>|</b> <#adadad> Tier II </#>
 		req:100000 mat, PortalResearch
-		cost:750000 mat
+		cost:75000 mat
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/RichPortal https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		passive:grant 1 PortOwned
 		passive:grant 1 TierII
@@ -1590,7 +1590,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		desc:A list helping you keep track of where your next Prestige Tokens can be found. While we can't tell you the exact ways it works, it involves several journalists, a dvd copy of the song Loadsamoney and, strangely, one domestic silk moth </> </> <b>Effects: </b> <.> Unlocks a list that shows your progress towards Prestige Achivements in the misc menu </> </> <#adadad> Tier II </#>
 		req:RichPortal
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/TheList https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
-		cost:100000 mat
+		cost:70000 mat
 		passive:grant 1 TierII
 		on earn:yield TheList2
 
@@ -1600,7 +1600,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		desc:Its a whole One (I) Prestige Token, that can be used for a whopping 1 (Uno) Prestige Upgrade. You know? the ones with the <#ffff61> ! Prestige ! </#> tag? Cool good go buy your 1 (Single) Prestige Upgrade, after you buy this 1 (one and one only) upgrade </> <b>Effects: </b> <.> Gives 1 (일) Prestige Token </> </> <#adadad> Tier II </#>
 		req:RichPortal
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Prestige%20Coin.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
-		cost:500000 mat
+		cost:300000 mat
 		passive:grant 1 TierII
 		on earn:yield 1 PreToken
 
