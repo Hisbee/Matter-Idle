@@ -1571,25 +1571,25 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		desc:This portal is quite rich and big money. They only talk to other rich people, like you with all the matter you got, and only about rich things like: money, gambling, fast car (just the one), artisanal bread, gambling, gacha games and gambling. They also aren't in any amount of debt. </> </> <b>Effects: </b> <.> Unlocks 3 somewhat expansive upgrades. </> </> <#8d54b0> > Portal < </#> <b>|</b> <#adadad> Tier II </#>
 		req:100000 mat, PortalResearch
 		cost:750000 mat
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/RichPortal https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/RichPortal https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		passive:grant 1 PortOwned
 		passive:grant 1 TierII
 
 	*GoldStatue
 		name:Prestigious Statue
-		tags:TierI
+		tags:TierII
 		desc:A very very expensive statue that celabrates your many accomplishments. It also looks nothing like you. </> </> <b>Effects: </b> <.> Increses Matter production by 1% for every Prestige achivement you have </> </> <#787878> Tier I </#>
 		req:RichPortal
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/GoldStatue.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/GoldStatue.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		cost:250000 mat
-		passive:grant 1 TierI
+		passive:grant 1 TierII
 
 	*TheList
 		name:"The List"
 		tags:TierII
 		desc:A list helping you keep track of where your next Prestige Tokens can be found. While we can't tell you the exact ways it works, it involves several journalists, a dvd copy of the song Loadsamoney and, strangely, one domestic silk moth </> </> <b>Effects: </b> <.> Unlocks a list that shows your progress towards Prestige Achivements in the misc menu </> </> <#adadad> Tier II </#>
 		req:RichPortal
-		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/TheList https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Prestige%20Boarder.png
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/TheList https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		cost:100000 mat
 		passive:grant 1 TierII
 		on earn:yield TheList2
