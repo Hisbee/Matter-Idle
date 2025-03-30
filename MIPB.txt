@@ -1510,8 +1510,19 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		passive:grant 1 PortOwned
 		passive:grant 1 TierII
 
+	*DustyFlower
+		name:Dusty Flower
+		tag:TierII
+		desc:This weird yellow flower is covered in a light layer of an unknown dust. The Boys Down at the Lab are interested in it, but they won't tell you why for some reason... maybe they just want some nice decoration around the place and are too shy to ask! </> </> <b>Effects: </b> <.> Increase Research Production by 1.5 <.> Increases Matter made by Tier I Matter Makers by 20% </> </> <#adadad> Tier II </#>
+		req:SmartPortal
+		cost:12500 mat, 30 MMMKI
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/DustyFlower https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
+		on tick:yield 1.5 Research
+		passive:multiply yield of MMMKI by 1.2
+		passive:grant 1 TierII
+
 	*LightBlueBrick
-		name:LightBlueBrick
+		name:Light Blue Brick
 		tags:TierII Brick
 		desc:A plastic brick you can stack with other bricks like it, this one kinda looks like Science colors. Smells like recently cleaned tile floor. </> </> <b>Effects: </b> <.> Lets you build 5 more Science Kits <.> The above effect is increased by 5 for each other brick upgrade you own </> </> <#adadad> Tier II </#> <b>|</b> <#663e2c> ■-Brick-■ </#>
 		req:SmartPortal
