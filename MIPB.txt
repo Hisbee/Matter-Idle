@@ -117,6 +117,11 @@ Layout
 		header:Research
 		costs:hide
 		names:hide
+	*prestigeHolder
+		contains:tag:prestige
+		header:Prestige Upgrades
+		costs:hide
+		names:hide
 	*portalHolder
 		contains:tag:Portal
 		header:Portals
@@ -1578,7 +1583,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 	*GoldStatue
 		name:Prestigious Statue
 		tags:TierII
-		desc:A very very expensive statue that celabrates your many accomplishments. It also looks nothing like you. </> </> <b>Effects: </b> <.> Increses Matter production by 1% for every Prestige achivement you have </> </> <#787878> Tier I </#>
+		desc:A very very expensive statue that celabrates your many accomplishments. It also looks nothing like you. </> </> <b>Effects: </b> <.> Increses Matter production by 1% for every Prestige achivement you have </> </> <#adadad> Tier II </#>
 		req:RichPortal
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/GoldStatue.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		cost:250000 mat
