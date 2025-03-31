@@ -58,6 +58,11 @@ CSS
 		background:#a300cc;
 	}
 
+	#box-prestigeHolder
+	{
+		background:##ffff5c;
+	}
+
 	#box-researchHolder
 	{
 		background:#3cd4d6;
@@ -108,7 +113,9 @@ Layout
 	*upgrButtons
 		contains:tag:upgradeSwitche
 	*upgrades
-		contains:tag:Important, tag:TierIII, tag:TierII, tag:TierI, researchHolder, portalHolder
+		contains:upgradesHolder, researchHolder, prestigeHolder, portalHolder
+	*upgradesHolder
+		contains:tag:Important, tag:TierIII, tag:TierII, tag:TierI
 		header:Upgrades
 		costs:hide
 		names:hide
