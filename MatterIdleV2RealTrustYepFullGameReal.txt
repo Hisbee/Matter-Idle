@@ -34,12 +34,40 @@ Resources
 			desc:its mater, you spemnt it to make more mattetteert
 			icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter
 
+		*winTalk
+		on earn:
+			if (winTalk=5)
+				toast Well good job
+			end
+			if (winTalk=10)
+				toast You did it
+			end
+			if (winTalk=15)
+				toast You beat the game
+			end
+			if (winTalk=20)
+				toast You really are winner
+			end
+			if (winTalk=25)
+				toast Well that was a waste of time
+			end
+			if (winTalk=30)
+				toast Feel like you should win something...
+			end
+			if (winTalk=40)
+				toast Is this a prize enough?
+				yield Prize
+			end
+		end
 Buttons
 	*MatterButton
 		name:Matter Button
 		desc:click this to make matter then spend it on stuff
 		on click:yield 1 mat
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter
+		on load:hide winTalk
+		on start:hide winTalk
+
 
 Buildings
 	*MatterClicker
@@ -52,175 +80,203 @@ Buildings
 	  *MatterMaker1
   		name:Tier I Matter Maker
 	  	desc:makes small amounds of matter (1) per second
-    		on tick:yield 1 mat
-      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK1
+    	on tick:yield 1 mat
+      	icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK1
 	  	cost:75 mat
 
 
  	  *MatterMaker2
   		name:Tier II Matter Maker
 	  	desc:makes meadeom amounds of matter (2) per second
-    		on tick:yield 2 mat
-      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK2
+    	on tick:yield 2 mat
+      	icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK2
 		cost:250 mat
 
  	  *MatterMaker3
   		name:Tier III Matter Maker
 	  	desc:makes more amounds of matter (5) per second
-    		on tick:yield 5 mat
-      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK3
+    	on tick:yield 5 mat
+      	icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK3
 		cost:600 mat
 
    	  *Mature
   		name:Mathewds
 	  	desc:digs matter for you
-    		on tick:yield 7.5 mat
-      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matthew%20Hat.png
+    	on tick:yield 7.5 mat
+      	icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matthew%20Hat.png
 		cost:955 mat
 
  	  *MatterMaker4
   		name:Tier IV Matter Maker
 	  	desc:makes big amounds of matter (10) per second
-    		on tick:yield 10 mat
-      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK4
+    	on tick:yield 10 mat
+   		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK4
 		cost:1500 mat
 
   	*MatterMiner
    		name:miner matter
-     		desc: guy who mindes mattter 4 u
-       		on tick:yield 3 mat
+   		desc: guy who mindes mattter 4 u
+   		on tick:yield 3 mat
 	 	icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/MinerHat
    		cost:700 mat
    
    	*SicGuy
-    		name:Matter sicince man/or womna
-      		desc: sometone who doses sicmrnr matter make
+    	name:Matter sicince man/or womna
+      	desc: sometone who doses sicmrnr matter make
 		on tick:yield 5 mat
   		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Research.png
-    		cost:992 mat
+    	cost:992 mat
 
       	*fasterman
        		name:fasttest mantter
-	 	desc: man who matter erealy fAst!!!! (10000000) very big
-   		on tick:yield 10000000 mat
+	 		desc: man who matter erealy fAst!!!! (10000000) very big
+   			on tick:yield 10000000 mat
      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/fast%20%2Cam
        		cost:938409284509485 mat
 
    	*humantahnk
     		name:Human CLoneeR
       		desc:makes 2 matter mjeiner everyyy socnend and 1 sic neic guy
-		on tick:yield 2 MatterMiner
-  		on tick:yield 1 SicGuy
-    		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/human%20makeer%201
+			on tick:yield 1 MatterMiner
+  			on tick:yield 2 SicGuy
+			icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/human%20makeer%201
       		cost:1000 mat
+			on earn:yield 2 SicGuy
+			on earn:yield 1 MatterMiner
+
 
          *humantahnk2
     		name:Human CLoneeR222
       		desc:make haman clon er
-		on tick:yield 5 humantahnk
+			on tick:yield 1 humantahnk
+			on tick:yield 1 humantahnk2
+			on tick:
+				if (have fastmancloner)
+					yield 6 fasterman
+				end
+			end
     		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/human%20makeer%201
-            	cost:100000 mat
+            cost:1000000 mat
 
       	*matterclicker
        		name:better clickerrer
-	 	desc:lets tou clickers bettetter!!!! (2)
-   		passive:increase yield of MatterButton by 2
+	 		desc:lets tou clickers bettetter!!!! (2)
+   			passive:increase yield of MatterButton by 2
      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/ClickyClicky
        		cost:10000 mat
 
 Upgrades
 
+	*Prize
+		name:Torn note??
+		desc:A torn piece of paper.</></> It reads: <i>"My job here is a doomed one. While this seemed more like a prank than a job, staying 5 nights with this box truely makes one rethink life. If anyone finds this</i> (theres a very large chunk of paper missing here...) <i>and most importantly, tell my story, and don't make the same mistake I did."</i> </></>You can also see the startings of the next paragraph but none of it is legible... weird.......
+		req:40 winTalk
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/Note1 https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Soulful%20Boarder.png
+
 	*MouseI
 		name:Better mouse
 		desc:your clicker harder
 		passive:increase yield of MatterButton by 2
-		passive:increase yield of MatterClicker by 1
+		passive:multiply yield of MatterClicker by 1.5
 		cost:100 mat
 
 	*MouseII
 		name:Betterer mouse
 		desc:your clicker envery harder
 		passive:increase yield of MatterButton by 6
-		passive:increase yield of MatterClicker by 2
+		passive:multiply yield of MatterClicker by 2
 		cost:500 mat
 
 	*MouseIII
 		name:Bettest mouse
 		desc:your clicker the best harder
 		passive:increase yield of MatterButton by 50
-		passive:increase yield of MatterClicker by 3
+		passive:multiply yield of MatterClicker by 3
 		cost:10000 mat
 
 	*MouseIV
 		name:Bettester mouse
 		desc:your clicker the bester harder
 		passive:increase yield of MatterButton by 100
-		passive:increase yield of MatterClicker by 5
+		passive:multiply yield of MatterClicker by 5
 		cost:200000 mat
 
 	*MouseV
 		name:Bettestererest mouse
 		desc:your clicker the besterester harderest
-		passive:increase yield of MatterButton by 1000
-		passive:increase yield of MatterClicker by 50
+		passive:multiply yield of MatterButton by 1000
+		passive:multiply yield of MatterClicker by 50
 		cost:1050704300 mat
 
 	*human1
 		name:bette workerss
 		desc:makess your s cloens wokr hardesr
-		passive:increase yield of SicGuy by 10
-		passive:increase yield of MatterMiner by 5 
+		passive:multiply yield of SicGuy by 2
+		passive:multiply yield of MatterMiner by 1.5 
 		cost:6060 mat
+
+	*free
+		name:!!FREE UPAFGERD!!!!
+		desc:hello im free upgrade
+		passive:increase yield of MatterButton by 5
 
 	*human2
 		name:bettester workerss
 		desc:makess your s cloens wokr evern   evne hardesr
-		passive:increase yield of SicGuy by 20
-		passive:increase yield of MatterMiner by 200
+		passive:multiply yield of SicGuy by 3
+		passive:multiply yield of MatterMiner by 50
 		cost:70630 mat
 
 	*fastman
 		name:the man is fast
 		desc:he is fasteres, vrery matter
-		passive:increase yield of fasterman by 200459465904
-		passive:increase yield of fasterman by 200948509432
+		passive:multiply yield of fasterman by 200459465
+		passive:multiply yield of fasterman by 200948509432
 		cost:30000630 mat
 
 	*mattermakeriy
 		name:youmatter maker is beter
 		desc:youmatter maker is beter
-		passive:increase yield of MatterMaker1 by 3
-		passive:increase yield of MatterMaker2 by 3
-		passive:increase yield of MatterMaker3 by 3
-		passive:increase yield of MatterMaker4 by 3
+		passive:multiply yield of MatterMaker1 by 3
+		passive:multiply yield of MatterMaker2 by 3
+		passive:multiply yield of MatterMaker3 by 3
+		passive:multiply yield of MatterMaker4 by 3
 		cost:402 mat
 
 
 	*mattermakeriy2
 		name:matter mak
 		desc:the bester matter makers
-		passive:increase yield of MatterMaker1 by 7
-		passive:increase yield of MatterMaker2 by 10
-		passive:increase yield of MatterMaker3 by 12
-		passive:increase yield of MatterMaker4 by 16
+		passive:multiply yield of MatterMaker1 by 7
+		passive:multiply yield of MatterMaker2 by 10
+		passive:multiply yield of MatterMaker3 by 12
+		passive:multiply yield of MatterMaker4 by 16
 		cost:5000 mat
 
 
 	*manMakers
 		name:fsatercloner
 		desc:yor clone bettererest
-		passive:increase yield of humantahnk by 6
+		passive:multiply yield of humantahnk by 16
 		cost:850402 mat
 
 	*MakerseMakers
 		name:fsatercloner cloners
 		desc:yor clone clonerses bettererest
-		passive:increase yield of humantahnk2 by 15
+		passive:multiply yield of humantahnk2 by 16
 		cost:1850402 mat
+
+	*fastmancloner
+		name:clone of fast man
+		desc:u cloners the fast man now
+		cost:99990402 mat
+		on earn:yield 6 fasterman
+		
 
 	*ending
 		name:you're winnder
 		desc:you are win of game
-		on tick:yield 108409583409684509685409684035968108409583409684509685409684035968108409583409684509685409684035968 mat
-		cost:1000000100000010000001000000100000010000001000000100000010000001000000 mat
+		on tick:yield 108409583409684509685409684035968108409583409684509685409684035968108409583409684509685409684035968 :Buildings
+		on tick:yield 1 winTalk
+cost:100000010000001000000100000010000001000000100000010000001000000100000010000001000000100000010000001000000100000010000001000000 mat
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/images.jpeg
