@@ -182,7 +182,7 @@ Upgrades
 	*fastman
 		name:the man is fast
 		desc:he is fasteres, vrery matter
-		passive:increase yield of fasterman by 200459465
+		passive:increase yield of fasterman by 200459465904
 		passive:increase yield of fasterman by 200948509432
 		cost:30000630 mat
 
@@ -218,7 +218,7 @@ Upgrades
 		passive:increase yield of humantahnk2 by 15
 		cost:1850402 mat
 
-	*end
+	*ending
 		name:you're winnder
 		desc:you are win of game
 		on tick:yield 108409583409684509685409684035968108409583409684509685409684035968108409583409684509685409684035968 mat
