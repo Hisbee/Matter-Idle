@@ -1,0 +1,112 @@
+Let's make a game!
+  name:Matter Clicker
+  by:Hisbee
+  desc:Super Mario
+  created:02/04/2025
+  stylesheet:stuff/bigBlue.css
+
+Layout
+  use default
+
+Resources
+	//True Resources
+		*mat
+			name:matter
+			desc:its mater, you spemnt it to make more mattetteert
+			icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter
+
+Buttons
+	*MatterButton
+		name:Matter Button
+		desc:click this to make matter then spend it on stuff
+		on click:yield 1 mat
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter
+
+Buildings
+	*MatterClicker
+  		name:Matter Auto Clicker
+		desc:auto clikcers the matter every 10 seocondss
+  		on tick:yield 0.1 mat
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/ClickyClicky https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter
+  		cost:10 mat
+  
+	  *MatterMaker1
+  		name:Tier I Matter Maker
+	  	desc:makes small amounds of matter (1) per second
+    		on tick:yield 1 mat
+      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK1
+	  	cost:75 mat
+
+
+ 	  *MatterMaker2
+  		name:Tier II Matter Maker
+	  	desc:makes meadeom amounds of matter (2) per second
+    		on tick:yield 2 mat
+      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK2
+		cost:250 mat
+
+ 	  *MatterMaker3
+  		name:Tier III Matter Maker
+	  	desc:makes more amounds of matter (5) per second
+    		on tick:yield 5 mat
+      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK3
+		cost:600 mat
+
+   	  *Mature
+  		name:Mathewds
+	  	desc:digs matter for you
+    		on tick:yield 7.5 mat
+      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matthew%20Hat.png
+		cost:955 mat
+
+ 	  *MatterMaker4
+  		name:Tier IV Matter Maker
+	  	desc:makes big amounds of matter (10) per second
+    		on tick:yield 10 mat
+      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK4
+		cost:1500 mat
+
+  	*MatterMiner
+   		name:miner matter
+     		desc: guy who mindes mattter 4 u
+       		on tick:yield 3 mat
+	 	icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/MinerHat
+   		cost:700 mat
+   
+   	*SicGuy
+    		name:Matter sicince man/or womna
+      		desc: sometone who doses sicmrnr matter make
+		on tick:yield 5 mat
+  		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Research.png
+    		cost:992 mat
+
+      	*fasterman
+       		name:fasttest mantter
+	 	desc: man who matter erealy fAst!!!! (10000000) very big
+   		on tick:yield 10000000 mat
+     		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/fast%20%2Cam
+       		cost:938409284509485 mat
+
+   	*humantahnk
+    		name:Human CLoneeR
+      		desc:makes 2 matter mjeiner everyyy socnend and 1 sic neic guy
+		on tick:yield 2 MatterMiner
+  		on tick:yield 1 SicGuy
+    		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/human%20makeer%201
+      		cost:1000 mat
+
+         *humantahnk2
+    		name:Human CLoneeR222
+      		desc:make haman clon er
+		on tick:yield 5 humantahnk
+    		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/Zfunny%20zone%20joke%20zone/human%20makeer%201
+            	cost:100000 mat
+
+      	*matterclicker
+       		name:better clickerrer
+	 	desc:lets tou clickers bettetter!!!! (2)
+   		passive:increase yield of MatterButton by 2
+     		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/ClickyClicky
+       		cost:100 mat
+
+	  	
