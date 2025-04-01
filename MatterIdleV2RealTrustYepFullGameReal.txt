@@ -5,10 +5,27 @@ Let's make a game!
   created:02/04/2025
 
 Settings
-  stylesheet:stuff/bigBlue.css
+	stylesheet:stuff/bigBlue.css
 
 Layout
-  use default
+*main
+  contains:buttons, res
+  *res
+    contains:Resources
+    class:fullWidth
+  *buttons
+    contains:Buttons
+*store
+  contains:buildings, upgrades
+  *buildings
+    contains:BulkDisplay, Buildings
+    header:Buildings
+    tooltip origin:left
+  *upgrades
+    contains:Upgrades
+    header:Upgrades
+    costs:hide
+    names:hide
 
 Resources
 	//True Resources
@@ -109,6 +126,84 @@ Buildings
 	 	desc:lets tou clickers bettetter!!!! (2)
    		passive:increase yield of MatterButton by 2
      		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/ClickyClicky
-       		cost:100 mat
+       		cost:10000 mat
 
-	  	
+Upgrades
+
+	*MouseI
+		name:Better mouse
+		desc:your clicker harder
+		passive:increase yield of MatterButton by 2
+		passive:increase yield of MatterClicker by 1
+		cost:100 mat
+
+	*MouseII
+		name:Betterer mouse
+		desc:your clicker envery harder
+		passive:increase yield of MatterButton by 6
+		passive:increase yield of MatterClicker by 2
+		cost:500 mat
+
+	*MouseIII
+		name:Bettest mouse
+		desc:your clicker the best harder
+		passive:increase yield of MatterButton by 50
+		passive:increase yield of MatterClicker by 3
+		cost:10000 mat
+
+	*MouseIV
+		name:Bettester mouse
+		desc:your clicker the bester harder
+		passive:increase yield of MatterButton by 100
+		passive:increase yield of MatterClicker by 5
+		cost:200000 mat
+
+	*MouseV
+		name:Bettestererest mouse
+		desc:your clicker the besterester harderest
+		passive:increase yield of MatterButton by 1000
+		passive:increase yield of MatterClicker by 50
+		cost:1050704300 mat
+
+	*human1
+		name:bette workerss
+		desc:makess your s cloens wokr hardesr
+		passive:increase yield of SicGuy by 10
+		passive:increase yield of MatterMiner by 5 
+		cost:6060 mat
+
+	*human2
+		name:bettester workerss
+		desc:makess your s cloens wokr evern   evne hardesr
+		passive:increase yield of SicGuy by 20
+		passive:increase yield of MatterMiner by 200
+		cost:70630 mat
+
+	*fastman
+		name:the man is fast
+		desc:he is fasteres, vrery matter
+		passive:increase yield of fasterman by 200459465
+		passive:increase yield of fasterman by 200948509432
+		cost:30000630 mat
+
+	*mattermakeriy
+		name:youmatter maker is beter
+		desc:youmatter maker is beter
+		passive:increase yield of MatterMaker1 by 3
+		passive:increase yield of MatterMaker2 by 3
+		passive:increase yield of MatterMaker3 by 3
+		passive:increase yield of MatterMaker4 by 3
+
+	*mattermakeriy
+		name:matter mak
+		desc:the bester matter makers
+		passive:increase yield of MatterMaker1 by 7
+		passive:increase yield of MatterMaker2 by 10
+		passive:increase yield of MatterMaker3 by 12
+		passive:increase yield of MatterMaker4 by 16
+
+	*end
+		name:you're winnder
+		desc:you are win of game
+		on tick:yield 108409583409684509685409684035968108409583409684509685409684035968108409583409684509685409684035968 mat
+		cost:1000000100000010000001000000100000010000001000000100000010000001000000 mat
