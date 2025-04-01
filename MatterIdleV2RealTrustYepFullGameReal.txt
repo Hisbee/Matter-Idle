@@ -193,6 +193,8 @@ Upgrades
 		passive:increase yield of MatterMaker2 by 3
 		passive:increase yield of MatterMaker3 by 3
 		passive:increase yield of MatterMaker4 by 3
+		cost:402 mat
+
 
 	*mattermakeriy
 		name:matter mak
@@ -201,6 +203,20 @@ Upgrades
 		passive:increase yield of MatterMaker2 by 10
 		passive:increase yield of MatterMaker3 by 12
 		passive:increase yield of MatterMaker4 by 16
+		cost:5000 mat
+
+
+	*manMakers
+		name:fsatercloner
+		desc:yor clone bettererest
+		passive:increase yield of humantahnk by 6
+		cost:850402 mat
+
+	*MakerseMakers
+		name:fsatercloner cloners
+		desc:yor clone clonerses bettererest
+		passive:increase yield of humantahnk2 by 15
+		cost:1850402 mat
 
 	*end
 		name:you're winnder
