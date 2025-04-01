@@ -28,5 +28,8 @@ Main Game - https://orteil.dashnet.org/igm/?g=https://raw.githubusercontent.com/
 ### MIPB.txt (or Matter Idle Private Beta)
 - Its where a programe upcomming updates
 - Since I could be making changes to it at any time, you probably shouldn't be playing that one
+### MatterIdleV2RealTrustYepFullGameReal.txt
+- A joke release made for april fools
+- you could be playing it, idk why you would tho
 ### README.md
 - You'll never guess
