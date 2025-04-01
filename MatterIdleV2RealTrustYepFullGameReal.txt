@@ -196,7 +196,7 @@ Upgrades
 		cost:402 mat
 
 
-	*mattermakeriy
+	*mattermakeriy2
 		name:matter mak
 		desc:the bester matter makers
 		passive:increase yield of MatterMaker1 by 7
