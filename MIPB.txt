@@ -2337,7 +2337,7 @@ Achievements
 		
 	*LostDude
 		name:Lost and Found
-		tags:Ach, MiscAch
+		tags:Ach, MiscAch, AchTierI
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/Found https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder 
 		desc:Find the Lost Achievement and bring them back home. Their family thanks you! </> </> <#787878> Tier I </#>
 		req:LostAchivement
@@ -2346,7 +2346,7 @@ Achievements
 
 	*MatterClicker
 		name:Not a Clicker Game
-		tags:Ach, MiscAch
+		tags:Ach, MiscAch, AchTierI
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/ClickyClicky https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
 		desc:Attempt to make Matter manually, and fail. </> </> <#787878> Tier I </#>
 		passive:grant 1 TierIAchieve
@@ -2354,18 +2354,27 @@ Achievements
 
 	*ClickyClicky
 		name:Huh?
-		tags:Ach, MiscAch, SecretAch
+		tags:Ach, MiscAch, SecretAch, AchTierI
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/ClickyClicky https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Achievements/AchievementIV.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%201%20Boarder
 		desc:Get really bored and start clicking on Achievements 50 times for some reason??? This isn't really a clicker game, what are you up to? (Unlocks the Useless Mouse Upgrade) </> </> <#787878> Tier I </#> <b>|</b> <#a499cf> ?¿secret¿? </#>
 		req:50 ClickAchievements
 		passive:grant 1 TierSAchieve
 		passive:grant 1 TierIAchieve
 
+	*TotalMatterI
+		name:Matter Making
+		tags:Ach, ProdAch, AchTierI
+		desc:Make a total of 500 Matter
+		req:500 mat:earned
+		passive:grant 1 TierIAchieve
+
+
 	*NoMatterMakers
 		name:Manual Labour
-		tags:Ach, MiscAch, SecretAch
+		tags:Ach, ProdAch, SecretAch, AchTierI
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Misc/Nope https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Matter%20maker%20MK2 https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		desc:Make 10 Matter a second, without any Matter Makers (Unlocks the Laborious Spirit Upgrade) </> </> <#adadad> Tier II </#> <b>|</b> <#a499cf> ?¿secret¿? </#>
 		req:10 mat:ps and (((MMMKI+MMMKII)+MMMKIII)=0)
 		passive:grant 1 TierSAchieve
 		passive:grant 1 TierIIAchieve
+
