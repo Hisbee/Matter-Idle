@@ -1389,11 +1389,11 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 	*MatterX
 		name:RGB Matter
 		tag:TierIII
-		desc:It's Matter, but many colours. By many colors we mean 3 </> </> <b>Effects: </b> </> <.> Increases Matter Production by 1% three times </> </> <#296b2b> Tier III </#>
+		desc:It's Matter, but many colours. By many colors we mean 3 </> </> <b>Effects: </b> </> <.> Increases Matter Production by 2% three times </> </> <#296b2b> Tier III </#>
 		cost:21880 mat
-		passive:multiply yield of mat by 1.01
-		passive:multiply yield of mat by 1.01
-		passive:multiply yield of mat by 1.01
+		passive:multiply yield of mat by 1.02
+		passive:multiply yield of mat by 1.02
+		passive:multiply yield of mat by 1.02
 		req:MatterIX
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/Total%20Matter/MatterXVIII https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%203%20Boarder
 		passive:grant 1 TierIII
