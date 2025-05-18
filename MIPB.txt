@@ -1543,7 +1543,6 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		passive:grant 1 TierII
 		passive:grant 1 BrickUp
 		passive:grant 5 SciKtMax
-		passive:grant (5*(BrickUp-1)) SciKtMax
 
 	*BigRedLever
 		name:The Big Red Lever
