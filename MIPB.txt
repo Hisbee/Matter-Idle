@@ -1542,7 +1542,8 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/LightBlueBrick https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%202%20Boarder
 		passive:grant 1 TierII
 		passive:grant 1 BrickUp
-		passive:grant (5*BrickUp) SciKtMax
+		passive:grant 5 SciKtMax
+		passive:grant (5*(BrickUp-1) SciKtMax
 
 	*BigRedLever
 		name:The Big Red Lever
