@@ -1466,6 +1466,9 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		cost:1 mat
 		req:NoMatterMakers
 		passive:yield 2.5 mat
+		passive:grant 1 TierII
+		passive:grant 1 TierS
+
 
 	*1stPortal
 		name:Strange Portal
