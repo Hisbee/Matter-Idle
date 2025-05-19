@@ -2038,7 +2038,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 
 	*UselessCounter
 		name:Useless Counter
-		tags:Misc noSwitch
+		tags:MiscStat noSwitch
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/UselessCounter
 		req:300 ClickAchievements
 		desc:Shows how many times you've clicked an Achievement. Does not give you bonuses for reaching high amounts of clicks. </> You have clicked on Achievements <b>[ClickAchievements]</b> times. </> Your rank is: <b>Time Waster</b>. There is no way to increase your rank. [?(MatterClick>=2)|You've also clicked on the Matter at the top <b>[MatterClick]</b> times|]
