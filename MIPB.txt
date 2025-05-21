@@ -1515,6 +1515,16 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		passive:multiply yield of Research by 1.1
 		passive:grant 1 TierII
 
+	*RandomPortal
+		name:pORT@L 0f L1gh$ AnB CQLLLIIHISKoRRRRRS
+		tags:Portal TierIII
+		desc:looking at it fills your mind with songs of static, songs both not meant for you yet crafted in your name, a song that calls out for you, a song that smells repulsive to you. it is life, it is death, it is not made for this world, it was here when the first stars were born. entropy. structure. being. </> </> <b>Effects: </b> <.> Unlocks Upgrades, they do stuff </> </> <#8d54b0> > Portal < </#> <b>|</b> <#296b2b> Tier III </#>
+		req:PortalResearch
+		cost:24441 mat, 37 MMMKI, 4 MMMKII, 16 Data
+		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/RandomPortal https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Tier%203%20Boarder
+		passive:grant 1 PortOwned
+		passive:grant 1 TierIII
+
 	*SmartPortal
 		name:Smart Portal
 		tags:Portal TierII
