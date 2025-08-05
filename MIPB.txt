@@ -1939,7 +1939,7 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		desc:After a lot more digging, you found this mysterious crystal thing. Holding it, you feel more awake than before... You should probably look into this </> </> <b>Unlocks: </b> </> <.> Unlocks Skills, NRG and your first Skill, Matter Burst! Find it in the Menu. </> </> <#69c0d1> 101_Research_010 </#>
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/NRG https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Research%20Boarder
 		req:3 TotalResearch, 10000 mat:earned
-		cost:399999999999 Data, 9999999999999999 Chum
+		cost:5 Data
 		passive:grant 5 NRGMax
 		on earn:yield MatterBurst
 		passive:if (have SkillResearch) NRGMaxTimer=60
