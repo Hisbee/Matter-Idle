@@ -1934,9 +1934,9 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		on earn:yield PortalNotes2
 
 	*SkillResearch
-		name:(WIP)NRG Research
+		name:NRG Research
 		tag:Research
-		desc:<#ff0000>(WIP)</#></>After a lot more digging, you found this mysterious crystal thing. Holding it, you feel more awake than before... You should probably look into this </> </> You can't buy this yet, its a WIP, Sorry :P</> <b>Unlocks: </b> </> <.> Unlocks Skills, NRG and your first Skill, Matter Burst! Find it in the Menu. </> </> <#69c0d1> 101_Research_010 </#>
+		desc:After a lot more digging, you found this mysterious crystal thing. Holding it, you feel more awake than before... You should probably look into this </> </> <b>Unlocks: </b> </> <.> Unlocks Skills, NRG and your first Skill, Matter Burst! Find it in the Menu. </> </> <#69c0d1> 101_Research_010 </#>
 		icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/Unlock.png https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/NRG https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%20and%20Boarders/!Z%20Research%20Boarder
 		req:3 TotalResearch, 10000 mat:earned
 		cost:399999999999 Data, 9999999999999999 Chum
@@ -1974,7 +1974,10 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 		cost:2 NRG
 		desc:Open up a rift to a dimension which is mostly the same as yours, then steal a wee bit from them and leave like nothing happened. Surely this won't backfire in anyway, shape or form? </> </> [?(MBCooldown>=1)|Matter Burst is <b><#ff0000>ON COOLDOWN</#></b>. Wait [(MBCooldown)] seconds|Matter Burst has a 20 second cooldown, its also off cooldown! Get to casting!] </> </> <b>Casting Cost:</b> 2 NRG </> </> <b>Effect:</b> When cast, gain 10 seconds of Matter production (<b>[(mat:ps*10)]</b>). This amount is not boosted by things that boost Matter production </> </> <#4fe38a> }!.Skill.!{ </#> | <#787878> Tier I </#>
 		on click:
-			if (NRG>=2)
+			if (NRG<=1)
+				toast You don't have enough NRG. You need [(2-NRG)] more NRG
+			end
+			else if (NRG>=2)
 				if (MBCooldown=0)
 					mat=(mat+(mat:ps*10))
 					yield 1 SkillsUsed
@@ -1984,9 +1987,6 @@ icon:https://file.garden/ZxrRje9aojhlnH3v/Upgrade%20Idle/sprites/!Achievements%2
 					toast Matter Burst is on cooldown! Wait [MBCooldown] seconds
 					yield 1 SkillsFailed
 				end
-			else if (NRG<=1)
-				toast You don't have enough NRG. You need [(2-NRG)] more NRG
-			end
 		end
 		
 
